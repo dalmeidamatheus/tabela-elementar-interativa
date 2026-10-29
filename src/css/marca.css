@@ -1,0 +1,6 @@
+.mc { display: flex; align-items: center; gap: 12px; height: 100vh; }
+.mc-c { position: relative; width: 40px; height: 44px; box-sizing: border-box; border-radius: 10px; background: #F2553C; color: #fff; text-align: center; box-shadow: 0 4px 10px rgba(217,72,43,.35); }
+.mc-c i { position: absolute; left: 4px; top: 2px; font: 600 8px Consolas, monospace; font-style: normal; opacity: .85; }
+.mc-c b { display: block; padding-top: 12px; font: 700 22px Georgia, serif; line-height: 1; }
+.mc-n { font: 800 26px 'Segoe UI Variable Display', 'Segoe UI', sans-serif; letter-spacing: -.02em; line-height: 1; color: #12303A; }
+.mc-s { margin-top: 4px; font-size: 9px; font-weight: 700; letter-spacing: .24em; color: #7C8A8F; text-transform: uppercase; }

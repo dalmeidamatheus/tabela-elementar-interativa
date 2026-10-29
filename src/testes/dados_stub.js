@@ -1,0 +1,11 @@
+const fs = require('fs'), path = require('path');
+const SRC = path.join(__dirname, '..');
+const psv = fs.readFileSync(path.join(SRC, 'dados/elementos.psv'), 'utf8').trim().split('\n');
+const cab = psv[0].split(';');
+const linhas = psv.slice(1).map(l => { const o = {}; l.split(';').forEach((v, i) => o[cab[i]] = v); return o; });
+const num = (v, d) => v === '' ? 'null' : Number(v).toFixed(d);
+const q = s => s.replace(/'/g, "\\'");
+const el = linhas.map(r => `[${r.Z},'${r.Simbolo}','${r.Nome}',${Number(r.Massa).toFixed(4)},${r.Grupo || 0},${r.Periodo},'${r.CatSlug}','${r.Bloco}',${num(r.EN, 2)},${num(r.FusaoK, 2)},${num(r.EbulicaoK, 2)},${num(r.DensidadeGcm3, 7)},'${r.Estado}',${r.Ano === '' ? 'null' : r.Ano},'${q(r.Descobridor)}','${r.Camadas}','${r.Oxidacoes}','${r.ConfigNobre}','${q(r.Fato)}',${r.Linha},${r.Coluna},${r.Valencia}]`).join(',');
+const cats = fs.readFileSync(path.join(SRC, 'm/Categorias.m'), 'utf8');
+const ct = [...cats.matchAll(/\{"(\w+)",\s*"([^"]+)",\s*"(#[0-9A-Fa-f]{6})"/g)].map(m => `${m[1]}:['${m[2]}','${m[3]}']`).join(',');
+module.exports = { dados: `window.EL_DADOS={v:1,el:[${el}],ct:{${ct}}};`, cats, SRC };
