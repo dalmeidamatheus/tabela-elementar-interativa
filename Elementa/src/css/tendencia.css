@@ -1,8 +1,0 @@
-.td svg { width: 100%; height: 86px; display: block; overflow: visible; }
-.td .br { fill: var(--k); opacity: .78; }
-.td .br.sel { opacity: 1; stroke: #12303A; stroke-width: 1.4; }
-.td .vs { font: 600 7.5px Consolas, monospace; fill: #40565C; text-anchor: middle; }
-.td .sm { font: 700 9px Georgia, serif; fill: #12303A; text-anchor: middle; }
-.td .sm.sel { fill: #F2553C; }
-.td .sv { fill: none; stroke: #CFC6AE; stroke-width: 1; stroke-dasharray: 2 2; }
-.td .base { stroke: #CFC6AE; stroke-width: 1; }

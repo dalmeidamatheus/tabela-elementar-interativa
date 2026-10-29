@@ -1,7 +1,0 @@
-.fi { position: relative; box-sizing: border-box; height: 100vh; padding: 10px 16px 12px; border-radius: 14px; border: 1px solid #E6E0D2; border-top: 6px solid var(--k); background: linear-gradient(165deg, #FFFFFF 30%, var(--kf)); box-shadow: inset 0 1px 0 #fff, 0 8px 22px rgba(70,55,25,.07); overflow: hidden; }
-.fi-top { display: flex; justify-content: space-between; font: 600 13px Consolas, monospace; color: #40565C; }
-.fi-s { margin-top: 2px; font: 700 68px/1 Georgia, serif; color: #12303A; letter-spacing: -.02em; }
-.fi-n { font: italic 400 22px Georgia, serif; color: #12303A; margin-top: 2px; }
-.fi-r { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
-.fi-p { font-size: 10.5px; color: #40565C; font-weight: 600; }
-.fi-ph { position: absolute; right: 8px; bottom: -22px; font: 700 150px/1 Georgia, serif; color: var(--k); opacity: .10; pointer-events: none; }
