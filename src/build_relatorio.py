@@ -29,7 +29,8 @@ def coluna(t, n): return {"Column": {"Expression": {"SourceRef": {"Entity": t}},
 def container(fundo=None, raio=0, pad=0):
     o = {"title": [{"properties": {"show": lit("false")}}], "dropShadow": [{"properties": {"show": lit("false")}}],
          "visualHeader": [{"properties": {"show": lit("false")}}],
-         "padding": [{"properties": {k: lit(f"{pad}D") for k in ("top", "bottom", "left", "right")}}]}
+         "padding": [{"properties": {k: lit(f"{pad}D") for k in ("top", "bottom", "left", "right")}}],
+         "general": [{"properties": {"keepLayerOrder": lit("true")}}]}
     if fundo:
         o["background"] = [{"properties": {"show": lit("true"), "color": cor(fundo), "transparency": lit("0D")}}]
         o["border"] = [{"properties": {"show": lit("true"), "color": cor("#E6E0D2"), "radius": lit(f"{raio}D")}}]

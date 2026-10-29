@@ -4,7 +4,7 @@
   "position": {
     "x": 750,
     "y": 20,
-    "z": 20500,
+    "z": 1000,
     "height": 32,
     "width": 514,
     "tabOrder": 20000
@@ -357,6 +357,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "keepLayerOrder": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
