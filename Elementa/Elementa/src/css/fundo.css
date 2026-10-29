@@ -1,0 +1,3 @@
+#htmlContent { background-color: #F8FAFC; background-image: linear-gradient(180deg, #F1F5F9 0%, #F8FAFC 100%); }
+.fd { height: 100vh; background-color: #F8FAFC; background-image: linear-gradient(180deg, #F1F5F9 0%, #F8FAFC 100%); position: relative; }
+.fd::after { content: ''; position: absolute; inset: 8px; border: 1px solid rgba(60,50,30,.16); border-radius: 8px; pointer-events: none; }

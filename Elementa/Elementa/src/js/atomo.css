@@ -1,0 +1,16 @@
+.at-svg { position: absolute; left: 46px; top: 124px; width: 520px; height: 520px; }
+.orb { fill: none; stroke: #D4CCB8; stroke-width: .35; stroke-dasharray: 1 1.6; }
+.gir { transform-origin: 100px 100px; animation: gira linear infinite; }
+.gir.inv { animation-direction: reverse; }
+.el { fill: #12303A; }
+.el.vl { fill: var(--k); stroke: #fff; stroke-width: .3; }
+.pr { fill: var(--k); } .ne { fill: #C9C3B3; }
+@keyframes gira { to { transform: rotate(360deg); } }
+.at-sim { font: 700 84px/1 Georgia, serif; }
+.at-sim sup { font-size: 34px; vertical-align: top; position: relative; top: 8px; }
+.at-nome { font: italic 22px Georgia, serif; margin-top: 2px; }
+.at-lin { display: flex; gap: 18px; margin: 14px 0 10px; }
+.at-lin div { font: 600 10px 'Segoe UI'; letter-spacing: .14em; color: #7C8A8F; text-transform: uppercase; }
+.at-lin b { display: block; font: 700 22px Georgia, serif; color: #12303A; letter-spacing: 0; margin-top: 2px; }
+.at-t { font: 600 12px Consolas, monospace; margin: 3px 0; }
+.at-m { margin-top: 8px; font-size: 11px; line-height: 1.45; color: #40565C; padding: 8px 10px; background: var(--kf); border-left: 3px solid var(--k); border-radius: 3px; }
