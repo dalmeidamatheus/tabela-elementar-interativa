@@ -2,7 +2,7 @@
 
 **Uma tabela periódica interativa feita no Power BI com HTML, CSS e JavaScript.**
 
-### [Ver o relatório online](LINK_DO_RELATORIO)
+### [Ver o relatório online](https://app.powerbi.com/view?r=eyJrIjoiMDc1OTIxMTAtYzhmZi00NDgyLTg0MjctZmM2M2EyOTc2NmNmIiwidCI6IjIzNjhkMzViLWZjNDQtNDMyMi1iOGI3LTBjM2ViNzhhMGRhYyJ9)
 
 ![Página Tabela](docs/previa-tabela-css.png)
 
