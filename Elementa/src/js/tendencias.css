@@ -1,0 +1,15 @@
+.td-lb { margin: 0 0 4px; font: 800 9px 'Segoe UI'; letter-spacing: .16em; color: #7C8A8F; text-transform: uppercase; }
+.td-lt .bt { height: 26px; padding: 0 10px; margin: 0 4px 4px 0; font-size: 10.5px; }
+.td-r { margin-top: 8px; font-size: 12px; color: #40565C; line-height: 1.5; }
+.td-r b { font: 800 22px Georgia, serif; color: #12303A; }
+.td-pt { cursor: pointer; transition: opacity .2s; }
+.td-pt:hover { stroke: #12303A; stroke-width: 1.5; }
+.td-ax { stroke: #D4CCB8; stroke-width: 1; }
+.td-gr { stroke: #EFE9DC; stroke-width: 1; }
+.td-tx { font: 600 10px Consolas, monospace; fill: #7C8A8F; }
+.td-tt { font: 700 11px 'Segoe UI'; fill: #40565C; }
+.td-lin { fill: none; stroke: #12303A; stroke-width: 1; opacity: .35; }
+.td-lg { display: inline-flex; align-items: center; gap: 5px; margin-right: 12px; font: 600 10.5px 'Segoe UI'; cursor: pointer; color: #12303A; }
+.td-lg i { width: 10px; height: 10px; border-radius: 50%; background: var(--k); display: inline-block; }
+.td-lg.off { opacity: .35; }
+.td-sel { margin-top: 6px; padding: 8px 12px; border-radius: 10px; background: #F5F2EB; font-size: 12px; color: #12303A; }

@@ -1,0 +1,52 @@
+table Categorias
+	lineageTag: f17bcd48-bbbf-4e48-acff-e9c3d80650ff
+
+	column Slug
+		dataType: string
+		lineageTag: a3b5fa38-985e-4530-8dd2-b48f48fa89fb
+		summarizeBy: none
+		sourceColumn: Slug
+
+	column Categoria
+		dataType: string
+		lineageTag: 2ee25004-7e1c-41e2-9e69-ff51d5d5237d
+		summarizeBy: none
+		sourceColumn: Categoria
+
+	column Cor
+		dataType: string
+		lineageTag: b22d3229-8447-4616-833b-d86aefcb0e72
+		summarizeBy: none
+		sourceColumn: Cor
+
+	column Ordem
+		dataType: int64
+		formatString: 0
+		lineageTag: 083397d6-f2aa-4cea-9201-fbd693d96755
+		summarizeBy: none
+		sourceColumn: Ordem
+
+	partition Categorias = m
+		mode: import
+		source =
+				// Categorias dos elementos: nome, cor-pigmento e ordem da legenda.
+				let
+				    Fonte = #table(
+				        type table [Slug = text, Categoria = text, Cor = text, Ordem = Int64.Type],
+				        {
+				            {"alc",   "Metais alcalinos",          "#F2553C", 1},
+				            {"alt",   "Alcalino-terrosos",         "#F7A823", 2},
+				            {"trans", "Metais de transição",       "#3F7CC4", 3},
+				            {"pos",   "Metais de pós-transição",   "#46A87F", 4},
+				            {"semi",  "Semimetais",                "#A9BC2F", 5},
+				            {"ame",   "Ametais",                   "#12A3A8", 6},
+				            {"hal",   "Halogênios",                "#E65C8A", 7},
+				            {"nob",   "Gases nobres",              "#6EC1E4", 8},
+				            {"lan",   "Lantanídeos",               "#C8743A", 9},
+				            {"act",   "Actinídeos",                "#9A5A4B", 10},
+				            {"desc",  "Propriedades desconhecidas","#A3A8AD", 11}
+				        }
+				    )
+				in
+				    Fonte
+

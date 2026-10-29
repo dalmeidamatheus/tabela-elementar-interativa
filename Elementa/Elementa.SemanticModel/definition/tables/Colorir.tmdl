@@ -1,0 +1,29 @@
+table Colorir
+	lineageTag: 2c5116af-6b13-4cf6-ac56-89ced4762938
+
+	column Modo
+		dataType: string
+		lineageTag: 51fac1a6-ffc5-446b-b140-06dde7fb5f03
+		summarizeBy: none
+		sourceColumn: Modo
+		sortByColumn: Ordem
+
+	column Ordem
+		dataType: int64
+		formatString: 0
+		lineageTag: 6bba86ba-77a5-44d6-beae-5a6c98a7b852
+		summarizeBy: none
+		sourceColumn: Ordem
+
+	partition Colorir = m
+		mode: import
+		source =
+				// Propriedade usada para colorir a tabela (segmentador de botões desconectado).
+				let
+				    Fonte = #table(
+				        type table [Modo = text, Ordem = Int64.Type],
+				        {{"Categoria", 1}, {"Estado", 2}, {"Eletroneg.", 3}, {"Densidade", 4}, {"Fusão", 5}, {"Descoberta", 6}}
+				    )
+				in
+				    Fonte
+

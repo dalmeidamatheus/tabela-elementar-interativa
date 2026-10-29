@@ -1,0 +1,8 @@
+.es { display: flex; align-items: center; gap: 10px; height: 100vh; padding: 0 8px; font-size: 10px; color: #40565C; }
+.es-g { flex: 1 1 auto; height: 10px; border-radius: 5px; border: 1px solid rgba(60,50,30,.25); background: linear-gradient(90deg, hsl(55,78%,88%), hsl(38,78%,77%), hsl(20,78%,65%), hsl(2,78%,54%), hsl(-15,78%,42%)); }
+.es b { font: 700 10px Consolas, monospace; color: #12303A; white-space: nowrap; }
+.es-n { font-size: 10px; color: #7C8A8F; white-space: nowrap; }
+.es-t { margin-right: auto; font-size: 10.5px; color: #5C6E73; }
+.es-i { display: inline-flex; align-items: center; gap: 5px; margin-right: 12px; font-weight: 600; }
+.es-i i { width: 11px; height: 11px; border-radius: 3px; background: var(--k); }
+.es-a { width: 11px; height: 11px; border-radius: 3px; background: #D9C9A0; display: inline-block; }
